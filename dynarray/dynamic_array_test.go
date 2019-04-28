@@ -1,4 +1,4 @@
-package main
+package dynarray
 
 import (
 	"testing"
@@ -8,7 +8,7 @@ func TestAdd(t *testing.T) {
 	Clear()
 	for i := 1; i < 15; i++ {
 		if !Add(i) {
-			t.Error("Couldn't add elemento to the array")
+			t.Error("Couldn't add element to the array")
 		}
 	}
 	if capacity != 20 || len(array) != 20 {

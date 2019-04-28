@@ -1,4 +1,4 @@
-package main
+package dynarray
 
 var capacity, length = 10, 0
 var array = make([]int, capacity)
